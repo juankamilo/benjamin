@@ -8,7 +8,7 @@ class DebitCard extends BaseProvider
     /**
      * @return \Ebanx\Benjamin\Models\DebitCard
      */
-    public function debitCardModel()
+    public function cardModel()
     {
         $card = new cardModel();
         $card->autoCapture = true;
