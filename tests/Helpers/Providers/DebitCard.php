@@ -1,17 +1,16 @@
 <?php
 namespace Tests\Helpers\Providers;
 
-use Ebanx\Benjamin\Models\DebitCard as cardModel;
+use Ebanx\Benjamin\Models\DebitCard as debitCardModel;
 
 class DebitCard extends BaseProvider
 {
     /**
      * @return \Ebanx\Benjamin\Models\DebitCard
      */
-    public function cardModel()
+    public function debitCardModel()
     {
-        $card = new cardModel();
-        $card->autoCapture = true;
-        return $card;
+        return new debitCardModel();
+
     }
 }
