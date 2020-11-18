@@ -10,7 +10,9 @@ class DebitCard extends BaseProvider
      */
     public function debitCardModel()
     {
-        return new debitCardModel();
+        $card = new debitCardModel();
+        $card->type = 'debitCard';
+        return $card;
 
     }
 }
