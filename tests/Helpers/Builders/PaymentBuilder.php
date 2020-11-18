@@ -92,6 +92,7 @@ class PaymentBuilder extends BaseBuilder
     {
         $this->instance->type = 'debitcard';
         $this->instance->debit_card = $this->faker->debitCardModel();
+        $this->instance->debit_card->type = 'debitcard';
         $this->instance->debit_card->threeds_eci = '05';
         $this->instance->debit_card->threeds_xid = 'AAIBAkl0NwmHglFBAXQ3AAAAAAA';
         $this->instance->debit_card->threeds_version = '2';
