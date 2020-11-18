@@ -22,7 +22,8 @@ class DebitCardPaymentAdapter extends BrazilPaymentAdapter
             'threeds_xid' => $this->payment->debit_card->threedsXid,
             'threeds_version' => $this->payment->debit_card->threedsVersion,
             'threeds_trxid' => $this->payment->debit_card->threedsTrxid,
-            'token' => $this->payment->debit_card->token
+            'token' => $this->payment->debit_card->token,
+            'type' => $this->payment->debit_card->type
         ];
     }
 
